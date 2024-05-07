@@ -1,7 +1,36 @@
 #include<iostream>
-using namespace std:
+using namespace std;
 int main()
 {
-char operation;
-float num1,num2
+char op;
+float num1,num2;
+cout<<"\n The Operators are : +,  -,  *,  / "<<endl;
+cin>>op;
+cout<<"\n Enter two operands you want to calculate "<<endl; 
+cin>>num1>>num2;
+cout<<"~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"<<endl;
 
+switch(op)
+{
+    case '+':
+    cout<<num1 << "+" << num2 << "=" <<num1 + num2;
+    break;
+    
+    case '-':
+    cout<<num1 << "-" << num2 << "=" <<num1 - num2;
+    break;
+    
+    case '*':
+    cout<<num1 << "*" << num2 << "=" <<num1 * num2;
+    break;
+    
+    case '/':
+        cout<<num1 << "/" << num2 << "=" <<num1 / num2;
+    break;
+    
+    default:
+    cout<<"\n OOPS! The operator you have entered is wrong ";
+}
+   
+return 0;
+}  
